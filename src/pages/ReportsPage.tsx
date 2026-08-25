@@ -21,8 +21,8 @@ export default function ReportsPage() {
             <Package className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">+2,350</div>
-            <p className="text-xs text-muted-foreground">+18% respecto al mes pasado</p>
+            <div className="text-2xl font-bold">--</div>
+            <p className="text-xs text-muted-foreground">--</p>
           </CardContent>
         </Card>
 
@@ -32,8 +32,8 @@ export default function ReportsPage() {
             <Truck className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">142</div>
-            <p className="text-xs text-muted-foreground">8 en curso actualmente</p>
+            <div className="text-2xl font-bold">--</div>
+            <p className="text-xs text-muted-foreground">--</p>
           </CardContent>
         </Card>
 
@@ -43,8 +43,8 @@ export default function ReportsPage() {
             <TrendingUp className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">94.5%</div>
-            <p className="text-xs text-muted-foreground">+2.1% de mejora</p>
+            <div className="text-2xl font-bold">--%</div>
+            <p className="text-xs text-muted-foreground">--</p>
           </CardContent>
         </Card>
 
@@ -54,8 +54,8 @@ export default function ReportsPage() {
             <Clock className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">2.4 días</div>
-            <p className="text-xs text-muted-foreground">Por ruta interestatal</p>
+            <div className="text-2xl font-bold">--</div>
+            <p className="text-xs text-muted-foreground">--</p>
           </CardContent>
         </Card>
       </div>
@@ -115,8 +115,10 @@ export default function ReportsPage() {
                 </label>
                 <select
                   id="type"
+                  defaultValue=""
                   className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 >
+                  <option value="" disabled>Selecciona una opción...</option>
                   <option value="incidencia">Incidencia General</option>
                   <option value="retraso">Retraso Operativo</option>
                   <option value="danio">Daño de Mercancía</option>
